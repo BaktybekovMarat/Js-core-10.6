@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.repositories {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.repositories li {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.50);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 5px;
+}
+
+.selected {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.selected li {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.50);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.selected li button {
+    border-radius: 1px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.50);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 5px;
+
+}

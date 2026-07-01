@@ -43,6 +43,8 @@ function renderRepositories(data) {
     li.addEventListener('click', () => {
       //при клике на репозитории выводим информацию чуть подробнее
       showRepository(repository);
+      enter.value = '';
+      repositories.innerHTML = '';
     });
   }
 }
